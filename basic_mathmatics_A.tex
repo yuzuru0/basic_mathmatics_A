@@ -1,0 +1,93 @@
+﻿%\documentclass[a4j,12pt]{jarticle}
+\documentclass[12pt,a4paper,twoside]{jarticle}
+\usepackage[dvipdfmx]{hyperref}
+\usepackage{pxjahyper}
+
+\hypersetup{%
+ bookmarksnumbered=true,%
+ colorlinks=true,%
+ setpagesize=false,%
+bookmarkstype=toc,%
+pdftitle={基礎数学A授業資料},%
+pdfsubject={2026年度基礎数学A授業資料},%
+pdfauthor={大場譲},%
+pdfkeywords={方程式, 不等式, 指数関数, 対数関数, 場合の数, 数列}%
+}
+
+\usepackage{color}
+\def\laplace#1#2{{\cal L}\left[#1\right]\left(#2\right)}
+\newcommand{\bi}[1]{{\boldsymbol{#1}}}
+
+ \makeatletter
+    \renewcommand{\theequation}{%
+    \thesection.\arabic{equation}}
+    \@addtoreset{equation}{section}
+  \makeatother
+
+\textwidth 153mm
+\textheight 230mm
+\topmargin -10mm
+\oddsidemargin -7mm
+\evensidemargin 14mm
+\usepackage{amsmath,amssymb}
+\usepackage{bm}
+\usepackage{graphicx}
+\usepackage{ascmac}
+\usepackage{fancyhdr}
+\usepackage{cancel}
+\lhead{\footnotesize 2026年度 基礎数学A 授業資料}
+
+%\setlength{\textwidth}{\fullwidth}
+%\setlength{\textheight}{39\baselineskip}
+%\addtolength{\textheight}{\topskip}
+%\setlength{\voffset}{-0.5in}
+%\setlength{\headsep}{0.3in}
+
+%\pagestyle{myheadings}
+\begin{document}
+
+
+\pagestyle{fancy}
+
+\include{basic_mathmatics_A_chap00}
+\cleardoublepage 
+%
+%\include{basic_mathmatics_A_chap01}
+%\cleardoublepage 
+%
+%\include{programming_III_chap03}
+%\cleardoublepage 
+%
+%\include{programming_III_chap04}
+%\cleardoublepage 
+%
+%\include{programming_III_chap05}
+%\cleardoublepage 
+%
+%\include{programming_III_chap06}
+%\cleardoublepage 
+%
+%\include{programming_III_chap07}
+%\cleardoublepage 
+%
+%\include{programming_III_chap08}
+%\cleardoublepage 
+%
+%%\include{programming_III_chap09}
+%%\cleardoublepage 
+%%
+%%%%付録%%
+%
+\appendix
+\renewcommand{\thepage}{A--\arabic{page}}
+\setcounter{footnote}{99}
+\setcounter{page}{1}
+%
+\include{programming_III_appendix01}
+\cleardoublepage 
+\include{programming_III_appendix02}
+\cleardoublepage 
+
+
+
+\end{document}
