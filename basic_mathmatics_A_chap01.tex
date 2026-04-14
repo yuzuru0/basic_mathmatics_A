@@ -1,2 +1,115 @@
-\section{}
-\subsection{}
+\section{整式の計算}
+\subsection{整式の加法・減法}
+\quad \\[0em]
+
+{\Large
+\begin{itemize}
+	\item 単項式 … 積だけで表せる式(和、差は無い) \\[0em]
+	\item 係数 … 単項式の数の部分 \\[0em]
+	\item 次数 … 掛け合わせた文字の個数 \\[0em]
+	\item 多項式 … 単項式の和 \\[0em]
+	\item 整式 … 単項式 と 多項式合わせたすべて\\[0em]
+	\item 項 … 整式に存在する単項式。 前から1,2,3$\cdots$と数える\\[0em]
+	\item 定数項 … 次数が0の項。つまり数のみの項\\[0em]
+	\item 整式の次数 … 整式全体の最大次数\\[0em]
+	\item n次式 … 次数がnの整式のこと
+\end{itemize}
+}
+
+\newpage
+{\Large
+【例】整式 $x^3 + 4x^2 -2xy -5$において\\[1em]
+
+
+\begin{itemize}
+	\item 単項式 … $x^3$ \qquad (第1項目) \\[0.5em]
+			\hphantom{単項式 … }$4x^2$\qquad (第2項目) \\[0.5em]
+			\hphantom{単項式 … }$-2xy$ \ \;(第3項目) \\[0.5em]
+			\hphantom{単項式 … }$-5$\qquad (第4項目) \\[0.5em]
+			\hphantom{単項式 … }の4つ \\[0em]
+	\item 係数 … $x^3$は1,\ $4x^2$は4, \ $-2xy$は-2 (定数項は含めない)\\[0em]
+	\item 次数 … 3 \qquad (第1項目) \\[0.5em]
+			\hphantom{次数 … }2\qquad (第2項目) \\[0.5em]
+			\hphantom{次数 … }2\qquad (第3項目) \\[0.5em]
+			\hphantom{次数 … }0\qquad (第4項目)% \\[0.5em]
+	\item 定数項 … -5 \\[0em]
+	\item 整式の次数 … 3次\\[0em]
+	\item この式のことを … 3次式とよぶ
+\end{itemize}
+
+
+}
+
+\newpage
+
+{\large
+\noindent	\textbf{計算の3法則}: 新たな数学概念のたびに出てくるので覚える\\[1em]
+
+\begin{itembox}[l]{計算の3法則}
+\begin{flalign*}
+&A+B = B+A,\quad AB=BA 				&& \text{(交換法則)}\\[1em]
+&(A+B)+C = A+(B+C),\quad (AB)C=A(BC) && \text{(結合法則)}\\[1em]
+&A(B+C)=AB+AC, \quad (A+B)C=AC+BC	&& \text{(分配法則)}\\
+\end{flalign*}
+\end{itembox}
+
+それぞれ
+\begin{itemize}
+	\item 交換法則 … 数や項を入れ替えて良い(交換)
+	\item 結合法則 … グループ化(結合)して順番を変えて良い
+	\item 分配法則 … かっこ外の値を中の値それぞれにかけて(分配)良い
+\end{itemize}
+である。\\[1em]
+
+\begin{itemize}
+	\item 同類項 … 多項式で文字の部分が同じもの。できるだけまとめる。
+\end{itemize}
+
+【例】 $x + 3x^2 -5 -3x +3$\\[0em]
+
+\begin{description}
+	\item{同類項1:\quad} $3x^2$		\qquad $\rightarrow \; 3x^2$
+	\item{同類項2:\quad} $x, \;-3x$	\qquad $\rightarrow \; -2x$
+	\item{同類項3:\quad} $-5,\; 3$	\qquad $\rightarrow \; -2$
+\end{description}
+
+通常は次数の大きいものから順に並べて整理(降べきの順)
+\begin{align*}
+3x^2 - 2x -2
+\end{align*}
+
+}
+\newpage
+
+
+{\large
+\noindent	\textbf{2つ以上の文字を含む場合}: 注目する文字を決め、他は数と同じに扱う\\[1em]
+
+【例】 $x^2-2xy^2+y^3-3y+1$\\[0em]
+
+\textbf{xに注目した場合}
+\begin{description}
+	\item{同類項1($x^2$)\hspace{2em}:\quad} $x^2$		\qquad $\rightarrow \; x^2$
+	\item{同類項2($x$)\hspace{2.4em}:\quad} $2xy^2$	\qquad $\rightarrow \; 2y^2x$
+	\item{同類項3(定数項):\quad} $y^3,\; -3y,\;1$	\qquad $\rightarrow \; y^3-3y+1$
+\end{description}
+
+\begin{align*}
+x^2 -2y^2x+ (y^3-3y+1)
+\end{align*}
+\quad \\[2em]
+\textbf{yに注目した場合}
+\begin{description}
+	\item{同類項1($y^3$)\hspace{2em}:\quad} $y^3$		\qquad $\rightarrow \; y^3$
+	\item{同類項2($y^2$)\hspace{2.4em}:\quad} $-2xy^2$	\qquad $\rightarrow \; -2xy^2$
+	\item{同類項3($y$)\hspace{2.4em}:\quad} $-3y$	\qquad $\rightarrow \; -3y$
+	\item{同類項4(定数項):\quad} $x^2,\; 1$	\qquad $\rightarrow \; x^2+1$
+\end{description}
+
+\begin{align*}
+y^3 -2xy^2 -3y +(x^2+1)
+\end{align*}
+
+
+}
+
