@@ -22,16 +22,16 @@
 
 
 \begin{itemize}
-	\item 単項式 … $x^3$ \qquad (第1項目) \\[0.5em]
-			\hphantom{単項式 … }$4x^2$\qquad (第2項目) \\[0.5em]
-			\hphantom{単項式 … }$-2xy$ \ \;(第3項目) \\[0.5em]
-			\hphantom{単項式 … }$-5$\qquad (第4項目) \\[0.5em]
+	\item 単項式 … $x^3$ \qquad (第1項) \\[0.5em]
+			\hphantom{単項式 … }$4x^2$\qquad (第2項) \\[0.5em]
+			\hphantom{単項式 … }$-2xy$ \ \;(第3項) \\[0.5em]
+			\hphantom{単項式 … }$-5$\qquad (第4項) \\[0.5em]
 			\hphantom{単項式 … }の4つ \\[0em]
 	\item 係数 … $x^3$は1,\ $4x^2$は4, \ $-2xy$は-2 (定数項は含めない)\\[0em]
-	\item 次数 … 3 \qquad (第1項目) \\[0.5em]
-			\hphantom{次数 … }2\qquad (第2項目) \\[0.5em]
-			\hphantom{次数 … }2\qquad (第3項目) \\[0.5em]
-			\hphantom{次数 … }0\qquad (第4項目)% \\[0.5em]
+	\item 次数 … 3 \qquad (第1項) \\[0.5em]
+			\hphantom{次数 … }2\qquad (第2項) \\[0.5em]
+			\hphantom{次数 … }2\qquad (第3項) \\[0.5em]
+			\hphantom{次数 … }0\qquad (第4項)% \\[0.5em]
 	\item 定数項 … -5 \\[0em]
 	\item 整式の次数 … 3次\\[0em]
 	\item この式のことを … 3次式とよぶ
@@ -43,7 +43,7 @@
 \newpage
 
 {\large
-\noindent	\textbf{計算の3法則}: 新たな数学概念のたびに出てくるので覚える\\[1em]
+\noindent \textbf{計算の3法則}: 新たな数学概念のたびに出てくるので覚える\\[1em]
 
 \begin{itembox}[l]{計算の3法則}
 \begin{flalign*}
@@ -90,7 +90,7 @@
 \textbf{xに注目した場合}
 \begin{description}
 	\item{同類項1($x^2$)\hspace{2em}:\quad} $x^2$		\qquad $\rightarrow \; x^2$
-	\item{同類項2($x$)\hspace{2.4em}:\quad} $2xy^2$	\qquad $\rightarrow \; 2y^2x$
+	\item{同類項2($x$)\hspace{2.4em}:\quad} $-2xy^2$	\qquad $\rightarrow \; -2y^2x$
 	\item{同類項3(定数項):\quad} $y^3,\; -3y,\;1$	\qquad $\rightarrow \; y^3-3y+1$
 \end{description}
 
@@ -111,5 +111,97 @@ y^3 -2xy^2 -3y +(x^2+1)
 \end{align*}
 
 
+}
+
+\newpage
+\subsection{数式の乗法}
+\quad \\[0em]
+{\Large
+$a^n$ … aをn回掛ける時の表記。aのn乗と呼ぶ。\\
+
+【例】%\\
+\begin{align*}
+&a^1 = a \\
+&a^2 = a \cdot a\\
+&a^3 = a \cdot a \cdot a\\
+&a^n = a \cdot a \cdots a
+\end{align*}
+\quad \\
+かけ算を明示的に示すときは\quad $\cdot$\quad の記号を使う。省略可\\[1em]
+$\times$は今後別な意味で出てくるので使わない。\\[1em]
+
+\noindent この例の事を「aの累乗」と呼ぶ。\\[1em]
+掛け合わせる回数$n$を「指数」、「べき」と呼ぶ\\[2em]
+
+累乗は以下の計算が可能
+\begin{align*}
+& a^2 \cdot a^3 = (a\cdot a)\cdot(a\cdot a\cdot a) = a^5 \\[.5em]
+& (a^2)^3 = a^2 \cdot a^2 \cdot a^2 = a^6 \\[.5em]
+& (ab)^3 = ab \cdot ab \cdot ab = a^3b^3
+\end{align*}
+}
+\newpage
+
+{\Large
+\begin{itembox}[l]{指数法則}
+$a^ma^n = a^{m+n},\qquad \left( a^m \right) ^n = a^{mn},\qquad \left( ab\right)^n = a^nb^n$
+\end{itembox}
+\quad \\
+【例1】 $(3a^2b)^2(-2ab^3)^3$\\
+
+右二つの法則を使うと
+\begin{align*}
+&(3a^2b)^2 = 9a^4b^2\\
+&(-2ab^3)^3 = -8a^3b^9
+\end{align*}
+よって
+%\quad \\
+\begin{align*}
+&与式= (9a^4b^2)(-8a^3b^9)
+\end{align*}
+\quad \\
+一番左の法則を使うことで
+\begin{align*}
+& (9a^4b^2)(-8a^3b^9) \quad= (9 \cdot -8)a^{4+3}b^{2+9} \quad=  -72a^7b^{11}
+\end{align*}
+\quad \\[2em]
+【例2】 $(x^2 -2x +4)(2x-3)$\\
+%
+\begin{align*}
+&=(x^2 -2x+4)\cdot 2x \quad + (x^2-2x+4)\cdot (-3) \\
+&=(2x^3 -4x^2 +8x) \quad+(-3x^2 +6x -12)\\
+&= 2x^3 -7x^2 +14x -12
+\end{align*}
+
+}
+\newpage
+
+{\Large
+以下の展開公式を覚えておくと計算が速くなる\\
+\begin{itembox}[l]{展開公式1}
+\begin{enumerate}
+	\item	$(a+b)^2 = a^2 + 2ab + b^2$\\
+		 	$(a-b)^2 = a^2 - 2ab +b^2$%\\
+	\item	$(a+b)(a-b) = a^2-b^2$
+	\item 	$(x+a)(x+b) = x^2 +(a+b)x +ab$
+	\item	$(ax+b)(cx+d) = acx^2+(ad+bc)x +bd$
+	\item	$(a+b)^3 = a^3+3a^2b +3ab^2 +b^3$\\
+			$(a-b)^3 = a^3-3a^2b +3ab^2-b^3$
+\end{enumerate}
+\end{itembox}
+\quad \\
+1～3は覚えておいた方が良い。\\[.5em]
+4,5は最悪その場で計算しても良い\\[2em]
+
+\begin{itembox}[l]{展開公式2}
+\begin{enumerate}
+\setcounter{enumi}{5}
+	\item	$(a+b+c)^2 = a^2 +b^2 +c^2 +2ab +2bc +2ca$ %\\
+	\item	$(a+b)(a^2 -ab+b^2) = a^3 +b^3$
+	\item 	$(a-b)(a^2 +ab +b^2) = a^3 -b^3$
+\end{enumerate}
+\end{itembox}
+\quad \\
+6,7,8もよく使う分野の人はそのときに覚える\\(というか自然と覚える)
 }
 
