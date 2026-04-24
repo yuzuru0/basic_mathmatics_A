@@ -652,3 +652,75 @@ x^3-3=&\  (x+2)(x^2-2x+4)-11
 \end{minipage}
 \end{center}
 }
+
+{\Large
+\subsection{剰余の定理と因数定理}
+%\quad\\
+%
+これまでは、整式Pを
+\begin{align*}
+P = x^3 + x^2 -2x -5
+\end{align*}
+とだけ記述してきた。\\[.5em]
+
+整式が文字$x$に関しての式である時を明示したいときには
+\begin{align*}
+P(x) = x^3 + x^2 -2x -5
+\end{align*}
+と記述する。\\[1.5em]
+カッコの中に数値、文字を入れると\\その変数(この場合$x$)に代入することを表す。
+\begin{itembox}[l]{例1}
+\begin{flalign*}
+\left\{
+	\begin{array}{l}
+	P(x) = x^3+x^2-2x-5\\
+	Q(x) = 2x^3+5x^2+x-2\\
+	\end{array}
+\right. &&
+\end{flalign*}
+のとき%\\%[1em]
+\begin{alignat*}{2}
+	&P(2)  &&=\quad (2)^3 +(2)^2 -2\cdot(2) -5 \\
+	&      &&=\quad 8 + 4 -4 -5 \quad = 3 \\[1em]
+	&Q(-1) &&=\quad 2\cdot(-1)^3 +5\cdot(-1)^2 +(-1) -2 \\
+	&      &&=\quad -2 +5 -1 -2 \quad = 0 \\[1em]
+	&2P(x) &&=\quad 2x^3+2x^2-4x-10
+\end{alignat*}
+\end{itembox}
+
+}
+
+{\Large
+
+整式の余りを計算する定理として「剰余の定理」が存在\\
+
+\begin{itembox}[l]{剰余の定理}
+整式$P(x)$を$x-a$で割ったときの余りは$P(a)$に等しい
+\end{itembox}
+\quad \\
+
+\begin{itembox}[l]{例}
+整式$P(x) = 2x^3+3x^2+5x+10$を$x-3$で割ったときの余りを求める。\\
+
+割る数は$x-\underbrace{3}_a$なので、
+\begin{align*}
+P(3) =& 2 \cdot (3)^3 + 3\cdot (3)^2 + 5\cdot(3) +10  \\
+=&54 + 27 + 15+10 = 106 \\%[1em]
+\end{align*}
+確かめ算
+\begin{center}
+\begin{tabular}{rcll}
+		&								& $2x^2 + 9x -22$									\\ \cline{2-3}
+$x-3$	&  \hspace{-.6em}\big)\kern0pt	& $2x^3+3x^2+5x+10$						\\[-0.1em] 
+		&								& $2x^3-6x^2$								\\[-0.1em] \cline{3-3}
+		&								& $\hphantom{2x^3-}\, 9x^2+5x$	\\[-0.1em]
+		&								& $\hphantom{2x^3-}\, 9x^2-27x$	\\\cline{3-3}
+		&								& $\hphantom{x^3-\,\ 2x^2-}32x+10$\\
+		&								& $\hphantom{x^3-\,\ 2x^2-}32x-96$\\\cline{3-3}
+		&								& $\hphantom{x^3-\,\ 2x^2-400}106$\\
+\end{tabular}
+\end{center}
+\end{itembox}
+
+
+}
