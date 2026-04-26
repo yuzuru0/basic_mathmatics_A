@@ -724,3 +724,88 @@ $x-3$	&  \hspace{-.6em}\big)\kern0pt	& $2x^3+3x^2+5x+10$						\\[-0.1em]
 
 
 }
+\newpage
+{\Large
+
+\textbf{剰余の定理の証明}\\%[1em]
+整式$P(x)$を$x-a$で割ったとき
+\begin{itemize}
+\vspace{-.5em}
+	\begin{multicols}{2}
+		\item 商: $Q(x)$
+		\item 剰余: $R$
+	\end{multicols}
+\vspace{-.5em}
+\end{itemize}
+としたとき、%\\%[1em]
+%
+\begin{align*}
+P(x) = (x-a)\cdot Q(x) + R
+\end{align*}
+%
+$x=a$の時は
+\begin{align*}
+P(a) =& \quad (a - a) \cdot Q(a) +R&&\\
+	 =& \quad  0 \cdot Q(a) +R	 &= \quad R
+\end{align*}
+
+つまり、$P(a)$の解は$(x-a)$で割ったときの余り$R$となる。\\%[1em]
+\begin{itembox}[l]{$(2x-3)$で割ったときは？}%
+\vspace{-1em}\begin{align*}
+P(x) = (2x -3)Q(x) + R
+\end{align*}
+括弧内を0にするために$x=\frac{3}{2}$を代入
+\begin{align*}
+	P\left( \frac{3}{2} \right) =& \left( 2 \cdot \frac{3}{2} -3 \right) Q(x) +R\\
+	=&\quad 0 \cdot Q(x) +R\\
+	=&\quad  R
+\end{align*}
+
+つまり$P(x)$を$(2x-3)$で割った時の剰余は、$P(\frac{3}{2})$となる。
+\end{itembox}
+\quad \\[-.5em]
+\begin{itembox}[l]{剰余の定理の拡張}
+整式$P(x)$を$ax-b$で割ったときの余りは$P\left( \frac{b}{a} \right)$に等しい
+\end{itembox}
+\newpage}
+
+
+{\Large
+剰余の定理で余り$R=0$は重要で、\textbf{因数定理}と呼ばれる。\\[-.5em]
+
+\begin{itembox}[l]{ \textbf{因数定理}}
+	\begin{itemize}
+		\item $P(a)=0$ならば$P(x)$は$x-a$で割り切れる
+		\item $P(x)$が$x-a$で割り切れるなら、$P(a)=0$となる
+	\end{itemize}
+\end{itembox}
+\quad\\
+また、因数定理を用いることで因数分解が可能である。\\[-.5em]
+\begin{itembox}[l]{例: \  $P(x) = x^3+3x^2-4x-12$の因数分解}
+\quad\\
+$P(a)=0$となる$a$を代入して探す(今回はa=2)
+\begin{align*}
+P(2) = 8 + 12 -8 -12 =0
+\end{align*}
+\quad \\
+つまり、$x-2$で割り切れる。
+\begin{center}
+\begin{tabular}{rcll}
+		&								& $x^2 + 5x +6$									\\ \cline{2-3}
+$x-2$	&  \hspace{-.6em}\big)\kern0pt	& $x^3+3x^2-4x-12$						\\[-0.1em] 
+		&								& $x^3-2x^2$								\\[-0.1em] \cline{3-3}
+		&								& $\hphantom{x^3-}\,\  5x^2-4x$	\\[-0.1em]
+		&								& $\hphantom{x^3-}\, \ 5x^2-10x$	\\\cline{3-3}
+		&								& $\hphantom{x^3-\,\ 2x^2-}6x-12$\\
+		&								& $\hphantom{x^3-\,\ 2x^2-}6x-12$\\\cline{3-3}
+		&								& $\hphantom{x^3-\,\ 2x^2-40000}0$\\
+\end{tabular}
+\end{center}
+
+よって、\vspace{-2.3em}
+\begin{align*}
+P(x) =& (x-2)(x^2+5x+6) \\
+	=& (x-2)(x+3)(x+2)
+\end{align*}
+\end{itembox}
+}
