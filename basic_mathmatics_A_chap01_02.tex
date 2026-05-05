@@ -1,0 +1,217 @@
+\subsection{いろいろな数と式}
+\subsubsection{分数式の計算}
+%\quad \\[0em]
+
+{\Large
+\begin{itemize}
+	\item 有理式 … $\frac{A}{B}$の形で表せる式\\[0em]
+	\item 分数式 … 有理式のうちBが定数でない式\\[0em]
+	\item 分子 … 有理式の$A$のこと\\[0em]
+	\item 分母 … 有理式の$B$のこと\\[0em]
+	\item 約分 … 有理式の分子と分母の公約数で簡易化すること\\[0em]
+	\item 既約分数式 … これ以上約分できない分数式 %\\[0em]
+\end{itemize}
+\quad \\
+\begin{align*}
+	有理式: \left\{ 
+		\begin{array}{lll}
+			\displaystyle \quad\frac{x^2+2x-2}{2} 	\quad=&\displaystyle \frac{1}{2}x^2+x -1 \qquad& \leftarrow 整式\\[2em]
+			\displaystyle \quad\frac{x^2+2x-2}{x+2}&									& \leftarrow 分数式\\
+		\end{array}
+	\right.
+\end{align*}
+
+\begin{align*}
+\frac{\overbrace{\cancel{(x-1)}}^{約分}(x+1)}{\cancel{(x-1)}(x+2)} \qquad= \frac{x+1}{x+2}　\quad \leftarrow 既約分数式
+\end{align*}
+}
+
+\newpage
+{\Large
+【例1】\\
+\begin{align*}
+	\frac{a^5}{a^2} \quad=& \frac{a\cdot a\cdot a\cdot \cancel{a\cdot a}}{\cancel{a\cdot a}} \quad= a\cdot a\cdot a
+\end{align*}
+\quad\\
+
+\begin{align*}
+	\frac{a^3}{a^3} \quad=& \frac{\cancel{a\cdot a\cdot a}}{\cancel{a\cdot a\cdot a}} \quad= 1
+\end{align*}
+\quad\\
+
+\begin{align*}
+	\frac{a^2b^2}{a^5b} \quad %
+	=& \frac{\cancel{a \cdot a}\cdot b\cdot \cancel{b}}{\cancel{a\cdot a}\cdot a \cdot a \cdot a \cdot \cancel{b}} \quad%
+	= \frac{b}{a^3}
+\end{align*}
+\quad \\[1em]
+
+\begin{itembox}[l]{除法の指数法則}
+\begin{enumerate}
+% 数字の形式を (i) に変更
+\renewcommand{\theenumi}{\Roman{enumi}}
+% ラベルの表示形式からドットを除去してカッコを付ける
+\renewcommand{\labelenumi}{(\theenumi)}
+%
+	\item $m>n$のとき\qquad $\displaystyle \frac{a^m}{a^n} = a^{m-n}$\\
+	\item $m=n$のとき\qquad $\displaystyle \frac{a^m}{a^n}= 1$ \\
+	\item $m<n$のとき\qquad $\displaystyle \frac{a^m}{a^n}= \frac{1}{a^{n-m}}$\\
+\end{enumerate}
+\end{itembox}
+
+}
+\newpage
+{\Large
+
+【例2】%\\
+\begin{align*}
+	\frac{(2ab)^5}{(2ab^2)^3} \quad= \  \frac{2^5a^5b^5}{2^3a^3b^6}\quad %
+	=\  \frac{2^{\cancel{5}^{\raisebox{0.5ex}{\footnotesize 2}}}a^{\cancel{5}^{\raisebox{0.5ex}{\footnotesize 2}}} \ \cancel{b^5}}{\cancel{2^3} \ \cancel{a^3}\ \  b^{\cancel{6}^{\raisebox{0.5ex}{\footnotesize 1}}}}%
+	= \ \frac{2^2 a^2}{b} \ = \frac{4a^2}{b}
+\end{align*}
+
+\begin{align*}
+	\frac{(-3ab)^2}{ab^2} \quad %
+	=\ \frac{(-3)^2 a^2 b^2}{ab^2} \quad =\ \frac{9 a^{\cancel{2}^{\raisebox{0.5ex}{\footnotesize 1}} }\ \cancel{b^2}}{\cancel{a}\  \cancel{b^2}}%
+	=\ 9a
+\end{align*}
+
+\begin{align*}
+	\frac{x^2 +5x+6}{x^2+2x-3} \quad = \ \frac{(x+3)(x+2)}{(x+3)(x-1)}	\quad = \ \frac{\cancel{(x+3)}(x+2)}{\cancel{(x+3)}(x-1)} = \frac{x+2}{x-1}
+\end{align*}
+\quad\\[1.0em]
+
+
+\begin{itemize}
+	\item 分母を共通にすることを \textbf{通分する}と呼び計算前に行う。
+\end{itemize}
+%\quad \\[1em]
+
+【例3】%\\
+\begin{align*}
+	x - \frac{xy}{x+y} \quad = \ \frac{x}{1} \cdot \frac{x+y}{x+y} \ -\  \frac{xy}{x+y} \quad =\  \frac{x^2 + xy - xy}{x+y} = \frac{x^2}{x+y}
+\end{align*}
+\quad\\[1em]
+\begin{flalign*}
+	&\frac{x}{(x-1)^3} + \frac{1}{(x-1)^3(x-2)} \quad = \ \frac{x}{(x-1)^3}\cdot \frac{x-2}{x-2} + \frac{1}{(x-1)^3(x-2)} \\[1em]
+	&=\frac{x^2-2x+1}{(x-1)^3(x-2)} \quad = \ \frac{(x-1)^2}{(x-1)^3(x-2)}\quad = \ \frac{\cancel{(x-1)^2}}{(x-1)^{\cancel{3}^{\raisebox{0.5ex}{\footnotesize 2}}}(x-2)}\\[1em]
+	&=\frac{1}{(x-1)(x-2)}
+\end{flalign*}
+}
+\newpage
+{\Large
+2つの分数式の積、割り算は整数の場合と同様である。
+
+\begin{itemize}
+	\item \quad $\displaystyle \frac{A}{B} \times \frac{C}{D} \quad=\  \frac{AC}{BD}$\\
+	\item \quad $\displaystyle \frac{A}{B} \div \frac{C}{D} \quad= \frac{A}{B} \times \frac{D}{C} \quad = \  \frac{AD}{BC} $
+\end{itemize}
+\quad \\
+
+【例4】%\\
+\begin{align*}
+	&\frac{x+1}{3-x} \times \frac{x^2-4x+3}{x^2-x-2} \quad = \frac{x+1}{-(x-3)} \times \frac{(x-3)(x-1)}{(x-2)(x+1)} \\[1em]
+	&= \frac{\bcancel{x+1}}{- \cancel{(x-3)}} \times \frac{\cancel{(x-3)}(x-1)}{(x-2)\bcancel{(x+1)}} \quad = \frac{x-1}{-(x-2)} = -\frac{x-1}{x-2}\\[1em]
+\end{align*}
+
+\begin{align*}
+&\frac{x^2+5x+6}{x^2-4x+4} \ \div\  \frac{x^2+3x}{x^2-4} \quad =\  \frac{x^2+5x+6}{x^2-4x+4} \times \frac{x^2-4}{x^2+3x} \\[1em]
+&=\ \frac{(x+3)(x+2)}{(x-2)^2} \times \frac{(x+2)(x-2)}{x(x+3)} \quad \\[1em]
+&=\ \frac{(\bcancel{x+3)}(x+2)}{(x-2)^{\cancel{2}^{\raisebox{0.5ex}{\footnotesize 1}} }} \times \frac{(x+2) \cancel{(x-2)}}{x\bcancel{(x+3)}} \quad = \frac{(x+2)^2}{x(x-2)}
+\end{align*}
+
+}
+\newpage
+{\Large
+\begin{itemize}
+	\item 繁分数式…分母、または分子に分数式を含む式
+\end{itemize}
+
+\begin{enumerate}
+% 数字の形式を (i) に変更
+%\renewcommand{\theenumi}{(\arabic{enumi})}
+% ラベルの表示形式からドットを除去してカッコを付ける
+\renewcommand{\labelenumi}{(\theenumi)}
+%
+	\begin{multicols}{3}
+	\item \quad $\displaystyle \frac{ \displaystyle \frac{c}{ab}}{ab^2c}$
+	\item \quad $\displaystyle \frac{\displaystyle \frac{y^2}{x} -x }{\displaystyle \frac{x^2}{y} -y}$
+	\item \quad $\displaystyle \frac{x-\displaystyle \frac{2}{x+1}}{x-1-\displaystyle \frac{3}{x+1}}$
+	\end{multicols}
+\end{enumerate}
+\quad \\
+繁分数は解消する。分数の中の分数の分母を掛ければいい\\
+【例題1】\\
+(1)\vspace{-2em}
+\begin{align*}
+\frac{\displaystyle \frac{c}{ab}}{ab^2c} \quad = \frac{\displaystyle \frac{c}{ab}}{ab^2c}\cdot \frac{ab}{ab} \quad = \frac{c}{a^2b^3c} = \frac{1}{a^2b^3}
+\end{align*}
+\quad\\[3em]
+%
+(2)\vspace{-4em}
+\begin{flalign*}
+&\frac{\displaystyle \frac{y^2}{x} -x }{\displaystyle \frac{x^2}{y} -y}  %
+\quad=\  \frac{\displaystyle \frac{y^2}{x} -x }{\displaystyle \frac{x^2}{y} -y} \cdot \frac{x}{x} %
+\quad =\  \frac{y^2-x^2}{ \displaystyle \frac{x^3}{y} -yx} \\[1em]%
+& =\  \frac{y^2-x^2}{ \displaystyle \frac{x^3}{y} -yx} \cdot \frac{y}{y} %
+\  =\  \frac{y^3-x^2y}{x^3-y^2x}%
+\  =\ \frac{y(y^2-x^2)}{-x(y^2-x^2)} = -\frac{y}{x}
+\end{flalign*}
+\quad\\[3em]
+%
+(3)\vspace{-4em}
+\begin{align*}
+%\frac{x-\displaystyle \frac{2}{x+1}}{x-1-\displaystyle \frac{3}{x+1}} %
+%\quad 
+\quad \frac{x-\displaystyle \frac{2}{x+1}}{x-1-\displaystyle \frac{3}{x+1}} \cdot \frac{x+1}{x+1} %
+\quad =  \frac{x^2+x-2}{(x-1)(x+1)-3} \\[1em]
+=\frac{(x-1)(x+2)}{x^2-1-3} = \frac{(x-1)(x+2)}{(x-2)(x+2)} = \frac{x-1}{x-2}
+\end{align*}
+}
+\newpage
+{\Large
+分数$\frac{14}{5}$は
+
+\begin{align*}
+\frac{14}{5} \quad= \frac{5 \times 2 \ + 4}{5} \quad =\frac{\cancel{5}\times2}{\cancel{5}} + \frac{4}{5} \quad = 2 + \frac{4}{5}
+\end{align*}
+となり、整数 + 分数の形にできる。
+
+\quad \\[1em]
+分数式の場合も同じ事ができ、$A \div B = Q あまりR$の時、
+\begin{align*}
+A = B\cdot Q + R
+\end{align*}
+なので、
+
+\begin{align*}
+\frac{A}{B} \quad = \frac{B\cdot Q + R}{B} \quad = \frac{\cancel{B}\cdot Q}{\cancel{B}} + \frac{R}{B} \quad = Q + \frac{R}{B}
+\end{align*}
+とできる。%
+\\[3em]
+%
+【例5】\qquad $\displaystyle \frac{6x^2-7x+5}{2x-3}$\\[1em]
+
+\begin{minipage}{.4\textwidth}
+	\begin{tabular}{rcll}
+			&								& $3x + 1$									\\ \cline{2-3}
+	$2x-3$	&  \hspace{-.6em}\big)\kern0pt	& $6x^2-7x+5$						\\[-0.1em] 
+			&								& $6x^2-9x$								\\[-0.1em] \cline{3-3}
+			&								& $\hphantom{6x^2-}\,\  2x+5$	\\[-0.1em]
+			&								& $\hphantom{6x^2-}\, \ 2x-3$	\\\cline{3-3}
+			&								& $\hphantom{6x^2-\,\ 2x-}8$\\
+	\end{tabular}\\
+	なので
+\end{minipage}
+\begin{minipage}{.1\textwidth}\hspace{\textwidth}\end{minipage}
+\begin{minipage}{.45\textwidth}
+
+\begin{align*}
+=&\  \frac{(2x-3)(3x+1) + 8}{2x-3} \\[1em]
+=&\  \frac{(2x-3)(3x+1)}{2x-3} +\frac{8}{2x-3}\\[1em]
+=&\  (3x+1) + \frac{8}{2x-3}
+\end{align*}
+
+\end{minipage}
+
+}
