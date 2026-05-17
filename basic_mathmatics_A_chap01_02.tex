@@ -456,4 +456,187 @@ i^2 = -1, \qquad \sqrt{-1} = i
 \end{itemize}
 
 }
+\newpage
+{\Large
+\quad \\[-2.em]
+\begin{itemize}
+	\item 複素数: \quad $\alpha = a + bi$\ の形で表せる数
+	\begin{itemize}
+		\item 虚数: $b\neq 0$の時の複素数。
+		\begin{itemize}
+			\item 純虚数: $a=0$の時の虚数。$\alpha = bi$
+			\item その他虚数: 純虚数以外の虚数。$\alpha = a+bi$\\
+		\end{itemize}
+		\item 実数: $b=0$の時の複素数の特別な形。$\alpha = a$
+	\end{itemize}
+\end{itemize}
+\quad \\
 
+\begin{center}
+	\includegraphics[width=.9\textwidth]{./img/1_2_2_about_complexnumber.eps}
+\end{center}
+\quad \\
+
+二つの複素数$\alpha = a + bi$、$\beta = c + di$が$\alpha = \beta$となるには、
+\begin{itemize}
+	\item 実部が等しい。$a=c$
+	\item 虚部が等しい。$b=d$
+\end{itemize}
+の両方の条件が必要である。
+
+}
+\newpage
+{\Large
+複素数の四則演算は、$i$を文字としてこれまでと同じ。\\[.5em]
+$i^2$が出てきたら$-1$に置き換える。\\
+
+【例12】%\\
+\begin{align*}
+i^3 \quad= i^2\cdot i \quad= (-1)i \quad= -i
+\end{align*}
+\begin{align*}
+i^4 \quad= (i^2)^2 \quad= (-1)^2 \quad=1
+\end{align*}
+\begin{align*}
+\frac{1}{i} \quad= \frac{1}{i} \cdot \frac{i}{i} \quad= \frac{i}{i^2} \quad= \frac{i}{-1} \quad= -i
+\qquad\footnotemark
+\end{align*}
+\footnotetext{この作業を分母の実数化、または有理化と呼ぶ}
+
+\begin{itembox}[l]{例題4}
+\begin{enumerate}
+%\renewcommand{\theenumi}{\Roman{enumi}}	% 数字の形式を (i) に変更
+\renewcommand{\labelenumi}{(\theenumi)}% ラベルの表示形式からドットを除去してカッコを付ける
+%
+	\item \qquad $ (4-3i) + (3+2i) \quad = 7 -i$ \\[-0.5em]
+	\item \qquad $(4-3i) - (3+2i) \quad = 1-5i$ \\[-0.5em]
+	\item \qquad $(4-3i)(3+2i) \quad = 12 +8i -9i -6i^2 \quad \\%
+			\hphantom{\qquad (4-3i)(3+2i) \quad }=12 -i +6 \quad= 18 -i $ \\[-0.5em]
+	\item \qquad $\displaystyle \frac{(4-3i)}{(3+2i)} \quad = \frac{(4-3i)}{(3+2i)}\cdot \frac{(3-2i)}{(3-2i)} \\[1em]%
+			\hphantom{\qquad \displaystyle \frac{(4-3i)}{(3+2i)}}\quad = \frac{12-17i+6i^2}{9- 4i^2} \quad = \frac{12-17i-6}{9+ 4}\\[1em]
+			\hphantom{\qquad \displaystyle \frac{(4-3i)}{(3+2i)}}\quad = \frac{6-17i}{13} \quad = \frac{6}{13} - \frac{17}{13}i$
+\end{enumerate}
+\end{itembox}
+}
+\newpage
+{\Large
+\begin{itembox}[l]{負の数の平方根}
+$k$が正のとき
+\begin{align*}
+\sqrt{-k} = \sqrt{k}\ i
+\end{align*}
+$-k$の平方根は、\quad$\pm\sqrt{-k} \ = \pm \sqrt{k}\ i$
+\end{itembox}
+
+【例13】\footnote{根号の性質における、$\sqrt{a}\sqrt{b} = \sqrt{ab}$は$a<0, b<0$などの複素数には成り立たないので注意!}%\\
+\begin{align*}
+\sqrt{-2} \quad= \sqrt{2}\ i
+\end{align*}
+%
+\begin{align*}
+\sqrt{-2}\sqrt{-3} \quad= \sqrt{2}\ i \sqrt{3}\ i \quad= \sqrt{6} i^2 \quad = -\sqrt{6}
+\end{align*}
+
+\quad \\[3em]
+複素数$\alpha = a+bi$は平面上に表し、\textbf{複素数平面}\footnote{複素平面}と呼ぶ。\\
+
+\begin{minipage}{.43\textwidth}
+\begin{itemize}
+	\item x軸: 実部の値。\textbf{実軸}。
+	\item y軸: 虚部の値。\textbf{虚軸}。\\
+	\item \textbf{共役複素数}: \\虚数部の符号を反転\\ $\overline{\alpha}$と表記 \footnotemark
+\end{itemize}
+\end{minipage}
+\begin{minipage}{.09\textwidth}\hspace{\textwidth}\end{minipage}
+\begin{minipage}{.45\textwidth}
+\includegraphics[width=\textwidth]{./img/1_2_3_about_complex_plane.eps}
+\end{minipage}
+\footnotetext{$\alpha^*$とも表記する}
+}
+\newpage
+{\Large
+
+【例14】%\\
+
+\begin{minipage}{.45\textwidth}
+\begin{flalign*}
+&\overline{4+2i} \quad = 4-2i&
+\end{flalign*}
+%
+\begin{flalign*}
+&\overline{4-2i} \quad = 4+2i&
+\end{flalign*}
+%
+\begin{flalign*}
+&\overline{-2i} \quad = 2i&
+\end{flalign*}
+%
+\begin{flalign*}
+&\overline{3} \quad =3&
+\end{flalign*}
+\end{minipage}
+%
+\begin{minipage}{.07\textwidth}\hspace{\textwidth}\end{minipage}
+%
+\begin{minipage}{.45\textwidth}
+\includegraphics[width=\textwidth]{./img/1_2_3_example_14.eps}
+\end{minipage}
+\quad \\[1em]
+%
+\begin{itemize}
+	\item \textbf{複素数の絶対値}: 複素数$\alpha$と原点$O$の距離。$|\alpha|$
+\end{itemize}
+\quad \\[-.5em]
+\begin{minipage}{.45\textwidth}
+\begin{align*}
+|\alpha| \quad = | a + bi|
+\end{align*}\\[-1em]
+
+右図より三平方の定理にて
+\begin{align*}
+|\alpha| = \sqrt{a^2+b^2}
+\end{align*}
+\end{minipage}
+%
+\begin{minipage}{.07\textwidth}\hspace{\textwidth}\end{minipage}
+%
+\begin{minipage}{.45\textwidth}
+\includegraphics[width=\textwidth]{./img/1_2_3_absolute_complex.eps}
+\end{minipage}
+
+\quad\\[3em]
+$\alpha$の虚部がない($b=0$)ときは、
+\begin{align*}
+|\alpha|\quad = \sqrt{a^2+0^2} \quad = \sqrt{a^2} \quad= |a|
+\end{align*}
+と、実数の絶対値の計算となる。
+}
+\newpage
+{\Large
+【例15】%\\
+
+\begin{minipage}{.45\textwidth}
+\begin{flalign*}
+&|3+4i| \quad = \sqrt{3^2+4^2} = 5&
+\end{flalign*}
+%
+\begin{flalign*}
+&|-3-2i| \quad = \sqrt{(-3)^2+(-2)^2}&\\
+&\hphantom{|-3-2i| \quad} = \sqrt{13}&
+\end{flalign*}
+%
+\begin{flalign*}
+&|-2i| \quad = \sqrt{0^2+(-2)^2} = 2&
+\end{flalign*}
+%
+\begin{flalign*}
+&|-3| \quad =3&
+\end{flalign*}
+\end{minipage}
+%
+\begin{minipage}{.07\textwidth}\hspace{\textwidth}\end{minipage}
+%
+\begin{minipage}{.45\textwidth}
+\includegraphics[width=\textwidth]{./img/1_2_3_example_15.eps}
+\end{minipage}
+}
