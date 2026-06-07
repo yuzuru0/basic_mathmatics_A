@@ -369,4 +369,109 @@ D &= (k-3)^2 -4 \cdot 1 \cdot k \quad = k^2-6k+9 -4k \\[.5em]
 \end{itembox}
 
 }
+\newpage
+{\Large
+	\begin{itemize}
+		\renewcommand{\labelitemi}{$\circ$}
+		\item 連立方程式
+	\end{itemize}
+	\quad\\[-3.5em]
+%
+	\begin{itemize}
+		\item 連立方程式:\quad  2個以上の方程式の組からなる式
+		\item 連立方程式の解:\quad  式すべてを同時に満たす解の組
+		\item 連立1次方程式:\quad 連立方程式がすべて1次方程式のとき
+	\end{itemize}
+	\quad\\[-2.5em]
 
+	\begin{itembox}[l]{例題6: 1次連立方程式の解}
+		\quad \\[-2em]
+		\begin{empheq}[left=\empheqlbrace]{align}
+					x+2y+z=3 \tag{1}\\
+					2x+3y-z=-4\tag{2}\\
+					4x-y+3z=0\tag{3}
+		\end{empheq}
+		%
+		\quad\\
+		式同士の加減算で未知数を1つずつ消していく \footnotemark
+		\begin{flalign}
+			(1)+(2)\quad \rightarrow 			&& 3x+5y=-1 &&	\tag{4}	\\
+			(1) \times 3 - (3)\quad \rightarrow	&& -x+7y=9	&&	\tag{5}\\%\\	&& 3
+			(4)+(5)\times 3\quad \rightarrow	&& 26y=26 \nonumber
+		\end{flalign}
+		\quad \\[-.5em]
+		つまり、$y=1$である。(5)に代入すると
+		\begin{align*}
+			-x +7 =9\quad \rightarrow \quad x=-2
+		\end{align*}
+		\quad \\[-.5em]
+		$x=-2, y=1$を(1)へ代入すると
+			\begin{align*}
+			-2+2+z=3 \quad \rightarrow \quad z=3
+		\end{align*}
+		\quad \\[-.5em]
+		よって解は、$x=-2, y=1, z=3$となる
+	\end{itembox}
+	\footnotetext{加減法}
+}
+\newpage
+{\Large
+	\begin{itembox}[l]{例題7: 2次連立方程式の解}
+		\quad \\[-2em]
+		\begin{empheq}[left=\empheqlbrace]{align}
+					3x+y=1 \tag{1}\\
+					6x^2-y^2-2y=3\tag{2}
+		\end{empheq}
+		%
+		\quad\\
+		式変形して代入することで未知数を消去する \footnotemark
+		\begin{flalign*}
+			(1)を変形: 	&& 3x+y=1 \quad \rightarrow y=1-3x	&&	\\[.5em]
+			(2)へ代入:	&& 6x^2-(1-3x)^2 -2(1-3x)&=3		&&	\\%\\	&& 3
+						&& 6x^2-1+6x-9x^2 -2+6x&=3			&&	\\
+						&& -3x^2+12x-3&=3					&&	\\
+						&& x^2-4x+2&=0						&&	
+		\end{flalign*}
+%		\quad \\[-.5em]
+		\vspace{-2em}
+		解の公式を用いて
+		\begin{align*}
+			x=\frac{4\pm\sqrt{16-8}}{2} \quad = 2\pm \sqrt{2}
+		\end{align*}
+		\quad \\[-1.em]
+		$x=2-\sqrt{2}$のとき
+		\begin{align*}
+			y=1-3x \quad= 1-3(2 -\sqrt{2}) \quad =-5+3\sqrt{2}
+		\end{align*}
+		\vspace{-.5em}
+		$x=2+\sqrt{2}$のとき
+		\begin{align*}
+			y=1-3x \quad= 1-3(2 +\sqrt{2}) \quad =-5-3\sqrt{2}
+		\end{align*}
+		\quad \\[-.5em]
+		よって解は、
+		
+		\begin{minipage}{.4\textwidth}
+		\begin{align*}
+			\left\{
+				\begin{tabular}{l}
+					$x=2-\sqrt{2}$\\
+					$y=5+3\sqrt{2}$
+				\end{tabular}
+			\right. ,
+		\end{align*}
+		\end{minipage}
+		\begin{minipage}{.05\textwidth}\hspace{\textwidth}\end{minipage}
+		\begin{minipage}{.4\textwidth}
+		\begin{align*}
+			\left\{
+				\begin{tabular}{l}
+					$x=2+\sqrt{2}$\\
+					$y=5-3\sqrt{2}$
+				\end{tabular}
+			\right.
+		\end{align*}		\end{minipage}
+		
+	\end{itembox}
+	\footnotetext{代入法}
+}
