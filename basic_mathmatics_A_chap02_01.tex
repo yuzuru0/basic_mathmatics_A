@@ -1,15 +1,15 @@
-\section{方程式}
-\subsection{2次方程式}
+\section{方程式と不等式}
+\subsection{方程式}
+\subsubsection{2次方程式}
 
 {\Large
 \begin{itemize}
-	\item 方程式 … 等式の文字に特別な値を入れると成り立つ式\\[0em]
-	\item $x$の方程式 … 等式の中に文字$x$を含む方程式\\[0em]
-	\item 解 … 方程式を満たす$x$の値\\[0em]
-	\item 未知数 … $x$の方程式の$x$のこと\\[0em]
-	\item 2次方程式 … 最大次数2の$ ax^2+bx+c=0$の方程式\\[0em]
+	\item 方程式 … 等式の文字に特別な値を入れると成り立つ式\\[-.5em]
+	\item $x$の方程式 … 等式の中に文字$x$を含む方程式\\[-.5em]
+	\item 解 … 方程式を満たす$x$の値\\[-.5em]
+	\item 未知数 … $x$の方程式の$x$のこと\\[-.5em]
+	\item 2次方程式 … 最大次数2の$ ax^2+bx+c=0$の方程式\\[-.5em]
 \end{itemize}
-
 \begin{itembox}[l]{例題1: 方程式$6x^2-x-2=0$の解}
 \quad \\[.5em]
 因数分解して
@@ -167,5 +167,130 @@ D &= (k-3)^2 -4 \cdot 1 \cdot k \quad = k^2-6k+9 -4k \\[.5em]
 \end{itemize}
 
 \end{itembox}
+
+}
+\newpage
+{\Large
+\subsubsection{解と係数の関係}
+
+2次方程式$ax^2+bx+c=0$の2つの解が
+
+\begin{align*}
+\alpha = \frac{-b + \sqrt{b^2-4ac}}{2a},%\\[.5em]
+\hspace{3em}\beta = \frac{-b - \sqrt{b^2-4ac}}{2a}\\[-.5em]
+\end{align*}
+のとき、$\alpha+\beta$および$\alpha\beta$は$a,b,c$で簡単に表せる。\\
+
+\begin{align*}
+\alpha + \beta \quad &= \frac{-b + \sqrt{b^2-4ac}}{2a} + \frac{-b - \sqrt{b^2-4ac}}{2a}\\[1.em]
+&= \frac{-2b}{2a} \quad = -\frac{b}{a}
+\end{align*}
+\quad \\[1em]
+\begin{align*}
+\alpha\beta \quad &= \frac{-b + \sqrt{b^2-4ac}}{2a} \times \frac{-b - \sqrt{b^2-4ac}}{2a}\\[1.em]
+&= \frac{(-b)^2 - \left( \sqrt{b^2-4ac}\right)^2}{4a^2} \quad = \frac{b^2 - \left( b^2-4ac\right)}{4a^2}\\[1em]
+&= \frac{4ac}{4a^2} \quad = \frac{c}{a}
+\end{align*}
+%
+\quad \\[.5em]
+}
+\newpage
+{\Large
+
+\begin{itembox}[l]{解と係数の関係}
+2次方程式$ax^2+bx+c=0$の2つの解を$\alpha, \beta$とすると
+\begin{align*}
+\alpha + \beta = -\frac{b}{a}, \hspace{3em} \alpha\beta = \frac{c}{a}
+\end{align*}
+\end{itembox}
+\quad \\[0em]
+
+
+\begin{itembox}[l]{例題3: 2次方程式の解が$\alpha,\beta$の時の計算}
+	\quad \\[-.5em]
+	$3x^2+5x+1=0$の解が$\alpha,\beta$のとき\\[0em]
+	
+	(1) $\alpha^2\beta + \alpha\beta^2$
+	%
+	\begin{align*}
+		\alpha^2\beta + \alpha\beta^2 \quad &= \alpha\beta(\alpha +\beta) \quad = \frac{c}{a}\cdot \left( -\frac{b}{a} \right) \\[.5em]
+		&= \frac{1}{3}\cdot\left( -\frac{5}{3}\right) \quad =-\frac{5}{9}
+	\end{align*}
+	%
+	\quad\\[1em]
+	(2) $\alpha^2+\beta^2$
+	%
+	\begin{align*}
+		\alpha^2+\beta^2 \quad&= \alpha^2 + 2\alpha\beta +\beta^2 - 2\alpha\beta \quad= \left( \alpha+\beta \right)^2 - 2\alpha\beta \\[.75em]
+		&= \left( -\frac{b}{a} \right)^2 - 2\frac{c}{a} \quad= \left( -\frac{5}{3} \right)^2 -\frac{2\cdot 1}{3} \\[1.em]
+		&= \frac{25}{9} - \frac{2}{3} \quad = \frac{25 -6}{9} \quad= \frac{19}{9}
+	\end{align*}
+
+\end{itembox}
+}
+\newpage
+{\Large
+	2次方程式の解を用いることで、2次式は因数分解が可能。\\[0em]
+
+	$ax^2+bx+c=0$の解が$\alpha,\beta$のとき、前ページの変形で\\[-.5em]
+	\begin{align*}
+		\alpha + \beta = -\frac{b}{a} \hspace{2em} &\rightarrow \hspace{2em} b = -a(\alpha+\beta) \\[1em]
+		\alpha\beta = \frac{c}{a} \hspace{2em} &\rightarrow \hspace{2em} c = a\alpha\beta
+	\end{align*}
+	%
+	\quad\\
+	上記を用いて
+	\begin{align*}
+		ax^2+bx+c\quad &= ax^2 -a(\alpha +\beta)x +a\alpha\beta \\[.5em]
+		&=a \left\{ x^2-(\alpha +\beta)x +\alpha\beta \right\} \\[.5em]
+		&=a (x-\alpha)(x-\beta)
+	\end{align*}
+	%
+	\quad \\[2em]
+	\begin{itembox}[l]{2次式の因数分解}
+		2次方程式$ax^2+bx+c=0$の2つの解を$\alpha, \beta$とすると
+		\begin{align*}
+			ax^2+bx+c \quad =a(x-\alpha)(x-\beta)
+		\end{align*}
+	\end{itembox}
+
+}
+\newpage
+{\Large
+\begin{itembox}[l]{例題4: 方程式の解を用いた因数分解}
+	\quad \\[-.5em]
+	(1) $x^2+6x+7$\\[.5em]
+	%
+	$x^2+6x+7$の解は解の公式により
+	\begin{align*}
+		x &= \frac{-6 \pm \sqrt{36-28}}{2} \quad =\frac{-6\pm\sqrt{8}}{2} \quad \\[.5em]
+		&= \frac{-6\pm 2\sqrt{2}}{2} \quad= -3\pm \sqrt{2}
+	\end{align*}
+	
+	よって
+	\begin{align*}
+		x^2+6x+7 &= \left\{ x-(-3+\sqrt{2})\right\} \left\{ x-(-3-\sqrt{2}) \right\} \\
+		&= (x+3-\sqrt{2})(x+3+\sqrt{2})
+	\end{align*}
+	
+	
+	\quad \\[-.5em]
+
+	(2) $2x^2-2x+5=0$\\[.5em]
+	%
+	$2x^2-2x+5=0$の解は解の公式により\\[-.5em]
+	\begin{align*}
+		x &= \frac{2\pm \sqrt{4-40}}{4} \quad =\frac{2 \pm{-36}}{4} \quad= \frac{2\pm6i}{4} \quad = \frac{1\pm3i}{2}
+	\end{align*}
+
+	よって
+	\begin{align*}
+		2x^2-2x+5\quad =2\left( x-\frac{1+3i}{2} \right)\left( x -\frac{1-3i}{2} \right)
+	\end{align*}
+\end{itembox}
+}
+\newpage
+
+{\Large
 
 }
