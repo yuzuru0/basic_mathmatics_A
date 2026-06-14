@@ -580,11 +580,11 @@ D &= (k-3)^2 -4 \cdot 1 \cdot k \quad = k^2-6k+9 -4k \\[.5em]
 		\item 無縁解 : 途中計算で出てくるが最終解にならないもの
 	\end{itemize}
 
-\footnotetext{分母=0にする例は次年度以降勉強する}
+\footnotetext{詳細は次年度以降勉強する}
 }
 \newpage
 {\Large
-	\begin{itembox}[l]{例題9: 根号を含む方程式}
+	\begin{itembox}[l]{例題10: 根号を含む方程式}
 		\quad \\[-2em]
 		\begin{align*}
 			\sqrt{7-2x} = x-2
@@ -623,4 +623,106 @@ D &= (k-3)^2 -4 \cdot 1 \cdot k \quad = k^2-6k+9 -4k \\[.5em]
 		\item 分母を払うために両辺に掛けた場合
 		\item ルートを外すために2乗した場合
 	\end{itemize}
+}
+\newpage
+{\Large
+	\subsubsection{恒等式}
+	\quad \\[-3em]
+	\begin{itemize}
+		\item 恒等式: 文字に何を代入しても常に成り立つ式 \\[-1.0em]
+		\begin{itemize}
+			\item 例1: \quad $x^2-4 \ =\  (x+2)(x-2)$		\\[-1.0em]
+			\item 例2: \quad $(x+y)^2 \ =\  x^2+2xy+y^2$%	\\[-.5em]
+		\end{itemize}
+	\end{itemize}
+	\quad \\[1.em]
+	2次式
+	\begin{align*}
+		ax^2+bx+c\ = \ a'x^2 +b'x +c'
+	\end{align*}
+	が恒等式になる$a,b,c,a',b',c'$の条件を導出する。\\
+	
+	恒等式は$x$に何を代入しても成り立つので、
+	\quad \\[1em]
+	$x=0$のとき
+	\vspace{-1em}
+	\begin{flalign}
+			c\ &= c' \tag{1}%\\%[1em]
+	\end{flalign}
+	\quad\\
+	\noindent $x=1$のとき
+	\vspace{-1em}
+	\begin{flalign}
+			&&a + b + c &= a' + b' + c'	&& \leftarrow (1)を用いて \nonumber\\
+			&&a + b & = a' + b' &&\tag{2}%\\[1em]
+	\end{flalign}
+	\quad\\
+	\noindent $x=-1$のとき
+	\vspace{-1em}
+	\begin{flalign}
+			&&a - b + c &= a' - b' + c'	&& \leftarrow (1)を用いて \nonumber \\
+			&&a - b & = a' - b' &&\tag{3}%\\[1em]
+	\end{flalign}
+
+}
+\newpage
+{\Large 
+	\vspace{-2em}
+	\begin{flalign*}
+		(2)+(3) \rightarrow	&& 2a=2a'	&& つまりa=a'\\[.5em]
+		(2)-(3) \rightarrow && 2b=2b'	&& つまりb=b'
+	\end{flalign*}
+	%\quad \\[1em]
+	よって、$a=a',\quad  b=b',\quad  c=c'$となれば良い\\[2em]
+	
+	\begin{itembox}[l]{恒等式の条件}
+		%\quad \\[-2em]
+		$a,\ b,\ c,\ a'\ ,b'\ ,c'\ $が定数の時
+		\begin{align*}
+			ax^2+bx+c\quad = \quad a'x^2+b'x+c'
+		\end{align*}
+		が恒等式になるための条件は
+		\begin{align*}
+		a=a', \quad b=b', \quad c=c'
+		\end{align*}
+		である。
+		%
+	\end{itembox}
+	\quad \\
+	【例4】\ $x^2+bx-15= ax^2+2x+c$が恒等式であるなら\\
+	\begin{align*}
+		a=1, \quad b=2, \quad c=-15
+	\end{align*}
+
+\begin{itembox}[l]{例題11: 高次恒等式}
+		%\quad \\[-2em]
+		恒等式となるように定数$a,b,c$の値を求めよ。
+		\begin{align*}
+			2x^3+3x^2+ax+3 = (x^2+2x+b)(2x+c)
+		\end{align*}
+		%
+		\quad\\[-1.em]
+		右辺を展開して
+		\begin{align*}
+			2x^3+3x^2+ax+3\  	&=\  2x^3 +cx^2+4x^2+2cx+2bx+bc\\
+								&=\ 2x^3 +(4+c)x^2 + (2c+2b)x +bc
+		\end{align*}
+%		\vspace{-2.5em}
+		恒等式のためには、同じ次数の係数が等しいので
+		\begin{empheq}[left=\empheqlbrace]{align*}
+			2=2 \\
+			3=4+c \tag{1}\\
+			a=2c+2b \tag{2}\\
+			3=bc \tag{3}
+		\end{empheq}
+		の方程式を解けば良い。
+		\begin{flalign*}
+			&&	c=-1	&&\leftarrow (1)から\\
+			&&	b=-3	&&\leftarrow (3)にcを代入\\
+			&&	a=-8	&&\leftarrow (2)にb,cを代入
+		\end{flalign*}
+		と求められる。
+		
+	\end{itembox}
+
 }
