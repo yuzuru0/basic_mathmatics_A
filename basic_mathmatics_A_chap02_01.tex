@@ -543,3 +543,84 @@ D &= (k-3)^2 -4 \cdot 1 \cdot k \quad = k^2-6k+9 -4k \\[.5em]
 		\end{align*}
 	\end{itembox}
 }
+{\Large
+	\begin{itembox}[l]{例題9: 分数式を含む方程式}
+		\quad \\[-2em]
+		\begin{align*}
+			\frac{1}{x-2} - \frac{x}{x+2} = \frac{4}{x^2-4}
+		\end{align*}
+		%
+		\quad\\[-.5em]
+		分数式の分母は0にしてはいけない \footnotemark ので、
+		\begin{align*}
+		x\neq \pm2
+		\end{align*}
+%		\vspace{-2.5em}
+		分母を消去するため、両辺に$(x-2)(x+2)$をかけると
+		
+		\begin{align*}
+			\frac{\cancel{(x-2)}(x+2)}{\cancel{x-2}} -\frac{x(x-2)\cancel{(x+2)}}{\cancel{x+2}} &= \frac{4\cancel{(x-2)(x+2)}}{\cancel{(x-2)(x+2)}} \\[1.em]
+			(x+2) - x(x-2) &= 4 
+		\end{align*}
+		\quad \\
+		整理することで、
+		\begin{align*}
+			(x+2) - x(x-2) &= 4 \\
+			-x^2+3x-2 &=0 \\
+			x^2-3x+2 &=0 \\
+			(x-2)(x-1)&=0
+		\end{align*}
+		上記より$x=1,2$であるが、$x\neq \pm2$の条件から解は
+		\begin{align*}
+			x=1
+		\end{align*}
+	\end{itembox}
+
+	\begin{itemize}
+		\item 無縁解 : 途中計算で出てくるが最終解にならないもの
+	\end{itemize}
+
+\footnotetext{分母=0にする例は次年度以降勉強する}
+}
+\newpage
+{\Large
+	\begin{itembox}[l]{例題9: 根号を含む方程式}
+		\quad \\[-2em]
+		\begin{align*}
+			\sqrt{7-2x} = x-2
+		\end{align*}
+		%
+		\quad\\[-1.em]
+		両辺を2乗して解く
+		\begin{align*}
+		7-2x 	&= (x-2)^2 \\
+		7-2x 	&= x^2-4x+4 \\
+		0		&= x^2-2x-3 \\
+		0		&= (x-3)(x+1)
+		\end{align*}
+%		\vspace{-2.5em}
+		よって、$x=3,-1$
+		
+		このとき$x=3$は、元の式に代入すると
+		\begin{align*}
+			\sqrt{7-6} &= 3-2\\
+			1&=1
+		\end{align*}
+		と方程式を満たす。
+		
+		しかしながら、$x=-1$は
+		\begin{align*}
+			\sqrt{7+2} &= -1-2\\
+			\sqrt{9}&=-3
+		\end{align*}
+		と方程式を満たさないので、無縁解となる。
+		
+		よって問題の解は、$x=3$となる。
+	\end{itembox}
+
+	以下の場合は無縁解が発生するので注意
+	\begin{itemize}
+		\item 分母を払うために両辺に掛けた場合
+		\item ルートを外すために2乗した場合
+	\end{itemize}
+}
