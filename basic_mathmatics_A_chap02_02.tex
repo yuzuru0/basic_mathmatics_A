@@ -11,9 +11,153 @@
 			\renewcommand{\labelenumi}{(\theenumi)}% ラベルの表示形式からドットを除去してカッコを付ける
 %
 			\item \quad $a>b$ならば\quad $a-b>0$\\
-					\quad $a-b>0$ ならば \quad $a>b$
-			\item \quad $a>0, b>0$ならば\quad $a+b>0, \ ab>0$
+					\quad $a-b>0$ ならば \quad $a>b$ \label{lst:inequality_01}
+			\item \quad $a>0, b>0$ならば\quad $a+b>0, \ ab>0$ \label{lst:inequality_02}
 	\end{enumerate}
 	\end{itembox}
 
+	(\ref{lst:inequality_01})、(\ref{lst:inequality_02})を元に、以下の(III)～(VI)を導出する。\\
+	
+	\begin{enumerate}
+	\renewcommand{\theenumi}{\Roman{enumi}}	% 数字の形式を (i) に変更
+	\renewcommand{\labelenumi}{(\theenumi)}% ラベルの表示形式からドットを除去してカッコを付ける
+	%
+	%初期番号を2に(次は3)
+	\setcounter{enumi}{2}
+		\item 「$a>b, b>c$ならば、$a>c$である。」
+	\end{enumerate}
+	\quad\\[-1.5em]
+	
+	\begin{center}
+		\includegraphics[width=.8\textwidth]{./img/2_2_1_inequality_3.eps}
+	\end{center}
+	
+	\begin{flalign*}
+	&&a-b >0, \quad b-c>0	&& \leftarrow (I)\\
+	&&(a-b)+(b-c)>0 \quad \rightarrow a-c >0	&& \leftarrow (II)\\
+	&& a>c					&& \leftarrow (I)
+	\end{flalign*}
 }
+	\newpage
+{\Large
+	\begin{enumerate}
+	\renewcommand{\theenumi}{\Roman{enumi}}	% 数字の形式を (i) に変更
+	\renewcommand{\labelenumi}{(\theenumi)}% ラベルの表示形式からドットを除去してカッコを付ける
+	%
+	%初期番号を2に(次は3)
+	\setcounter{enumi}{3}
+		\item 「$a>b$ならば、$a+c>b+c$である。」
+	\end{enumerate}
+	
+	\noindent 1. $c$が正で小さい場合
+	\begin{center}
+		\includegraphics[width=.7\textwidth]{./img/2_2_1_inequality_4_1.eps}
+	\end{center}
+	例:\quad $(a+4)-(b+4) = a-b >0 \qquad \therefore a+4>b+4$\\[.0em]
+	
+	\noindent 2. $c$が正で大きい場合
+	\begin{center}
+		\includegraphics[width=.7\textwidth]{./img/2_2_1_inequality_4_2.eps}
+	\end{center}
+	\quad \\
+	
+	\noindent 3. $c$が負で絶対値が小さい場合
+	\begin{center}
+		\includegraphics[width=.7\textwidth]{./img/2_2_1_inequality_4_3.eps}
+	\end{center}
+	例:\quad $(a-4)-(b-4) = a-b >0 \qquad \therefore a-4>b-4$\\[.0em]
+	
+	4. $c$が負で絶対値が大きい場合
+	\begin{center}
+		\includegraphics[width=.7\textwidth]{./img/2_2_1_inequality_4_4.eps}
+	\end{center}
+
+}
+\newpage
+{\Large
+	\begin{enumerate}
+	\renewcommand{\theenumi}{\Roman{enumi}}	% 数字の形式を (i) に変更
+	\renewcommand{\labelenumi}{(\theenumi)}% ラベルの表示形式からドットを除去してカッコを付ける
+	%
+	%初期番号を2に(次は3)
+	\setcounter{enumi}{4}
+		\item 「$a>b$、$c>0$ならば、$ca>cb$である。」
+	\end{enumerate}
+
+	\noindent 1. $a>0, b>0$のとき
+	\begin{center}
+		\includegraphics[width=.7\textwidth]{./img/2_2_1_inequality_5_1.eps}
+	\end{center}
+	\quad \\[2em]
+%
+	\noindent 2. $a>0, b<0$のとき
+	\begin{center}
+		\includegraphics[width=.7\textwidth]{./img/2_2_1_inequality_5_2.eps}
+	\end{center}
+	\quad \\[2em]
+%
+	\noindent 3. $a<0, b<0$のとき
+	\begin{center}
+		\includegraphics[width=.7\textwidth]{./img/2_2_1_inequality_5_3.eps}
+	\end{center}
+	\quad \\[2em]
+%
+	例:\quad $c=2$%\vspace{-2em}
+	\begin{flalign*}
+		&& 2>0, a-b>0\qquad \rightarrow \quad 2(a-b) >0 && \leftarrow (II)\\
+		&& 2(a-b) = 2a -2b >0 \qquad \therefore 2a>2b && \leftarrow (I)
+	\end{flalign*}
+}
+%
+{\Large
+	\begin{enumerate}
+	\renewcommand{\theenumi}{\Roman{enumi}}	% 数字の形式を (i) に変更
+	\renewcommand{\labelenumi}{(\theenumi)}% ラベルの表示形式からドットを除去してカッコを付ける
+	%
+	%初期番号を5に(次は6)
+	\setcounter{enumi}{5}
+		\item 「$a>b$、$c<0$ならば、$ca<cb$である。」
+	\end{enumerate}
+
+	\noindent 1. $a>0, b>0$のとき
+	\begin{center}
+		\includegraphics[width=.7\textwidth]{./img/2_2_1_inequality_5_1.eps}
+	\end{center}
+	\quad \\[-.5em]
+%
+	\noindent 2. $a>0, b<0$のとき
+	\begin{center}
+		\includegraphics[width=.7\textwidth]{./img/2_2_1_inequality_5_2.eps}
+	\end{center}
+	\quad \\[-.5em]
+%
+	\noindent 3. $a<0, b<0$のとき
+	\begin{center}
+		\includegraphics[width=.7\textwidth]{./img/2_2_1_inequality_5_3.eps}
+	\end{center}
+%	\quad \\[0em]
+%
+%	例:\quad $c=-2$%\vspace{-2em}
+%	\begin{flalign*}
+%		&& a>b \quad \rightarrow a-b>0 && \leftarrow (I)\\
+%		&& -2(a-b) \ = -2a +2b  \ = 2b -2a>0	&&  \\
+%		&&	\therefore 2b>2a \qquad \rightarrow 2a<2b && \leftarrow (I) \\
+%	\end{flalign*}
+
+	\begin{itembox}[l]{不等式の性質(2)}
+		\begin{enumerate}
+			\renewcommand{\theenumi}{\Roman{enumi}}	% 数字の形式を (i) に変更
+			\renewcommand{\labelenumi}{(\theenumi)}% ラベルの表示形式からドットを除去してカッコを付ける
+			\setcounter{enumi}{2}
+%
+			\item \quad $a>b, b>c$ならば \quad $a>c$
+			\item \quad $a>b$ならば\quad $a+c>b+c,\quad a-c>b-c$
+			\item \quad $a>b, c>0$ならば \quad $ac>bc,\quad \displaystyle \frac{a}{c} > \frac{b}{c}$
+			\item \quad $a>b, c<0$ならば \quad $ac<bc,\quad \displaystyle \frac{a}{c} < \frac{b}{c}$
+	\end{enumerate}
+	\end{itembox}
+	特に(VI)の\\
+	\textbf{両辺に負の値を掛ける(割る)際には、不等号が逆になる}\\
+	ので注意する。
+}
+
