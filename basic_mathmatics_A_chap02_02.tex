@@ -165,13 +165,13 @@
 {\Large
 	性質をまとめると、両辺に
 		\begin{enumerate}
-			\renewcommand{\theenumi}{\Roman{enumi}}	% 数字の形式を (i) に変更
+			\renewcommand{\theenumi}{\Roman{enumi}}	% 数字の形式を (I) に変更
 			\renewcommand{\labelenumi}{(\theenumi)}% ラベルの表示形式からドットを除去してカッコを付ける
 			\setcounter{enumi}{3}
 %
-			\item 同値を加減算しても良い。
-			\item 正の同値を乗除算しても良い。
-			\item 負の同値を乗除算しても良いが\textbf{不等号は逆}になる。
+			\item 同じ値を加減算しても良い。
+			\item 正の同じ値を乗除算しても良い。
+			\item 負の同じ値を乗除算しても良いが\textbf{不等号は逆}になる。
 	\end{enumerate}
 	
 	\quad \\[-1em]
@@ -180,12 +180,12 @@
 		\item 不等式の解 … 与えられた不等式の成り立つ$x$の範囲。\\[-.0em]
 				\hphantom{不等式の解 … }$x<3$\  などと表す。\\[-.5em]
 		\item 不等式を解く … 不等式の解を求めること。\\[-.5em]
-		\item 1次不等式 … $\text{右辺}=0$のときの左辺が1次の不等式。\\
+		\item 1次不等式 … 右辺が$0$のときの左辺が1次の不等式。\\
 				\hphantom{1次不等式 … }$x-4>0$ \  のような式。
 	\end{itemize}
 %
 %
-	\quad \\[-1.0em]
+	\quad \\[-2.5em]
 	\begin{itembox}[l]{例題1: 1次不等式の解}
 	\vspace{-1em}
 		\begin{align*}
@@ -202,4 +202,54 @@
 		\end{flalign*}
 		よって解は\quad $x <3$\quad である。
 	\end{itembox}
+}
+\newpage
+{\Large
+	\subsubsection{いろいろな不等式}
+	\begin{itemize}
+		\item 連立不等式 … 2個以上の不等式の組
+		\item 連立不等式の解 … 全不等式を同時に満たす値の範囲
+	\end{itemize}
+	\quad \\
+		\begin{itembox}[l]{例題1: 連立不等式の解}
+	\vspace{-0em}
+		\begin{empheq}[left=\empheqlbrace]{align}
+					3x+10>4 \tag{1}\\
+					2x+3\leqq 9 \tag{2}
+		\end{empheq}
+		%
+%		\quad\\
+		\begin{minipage}{.45\textwidth}
+			\begin{align*}
+			3x+10&>4	\\
+			3x &>-6		\\
+			x&>-2
+			\end{align*}
+		\end{minipage}
+		%
+		\begin{minipage}{.05\textwidth}\hspace{\textwidth}\end{minipage}
+		%
+		\begin{minipage}{.45\textwidth}
+			\begin{align*}
+			2x+3 &\leqq 9 \\
+			2x &\leqq 6	\\
+			x & \leqq 3
+			\end{align*}
+		\end{minipage}
+		\quad \\[1em]
+		
+		(1)式の解は$x >-2$、(2)式の解は$x\leqq 3$である。
+		\quad \\[1em]
+		図示すると \footnotemark\\
+		\begin{center}
+			\includegraphics[width=.6\textwidth]{./img/2_2_3_inequalities_area.eps}
+		\end{center}
+		
+		この図中の共通な範囲$x$が解であり
+		\begin{align*}
+			-2 < x \leqq 3
+		\end{align*}
+		
+	\end{itembox}
+	\footnotetext{{\Large \textbullet} はその点の値を含むことを示し、 {\Large \textopenbullet} はその点の値を含まないことを示す。}
 }
