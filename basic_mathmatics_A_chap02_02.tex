@@ -154,10 +154,52 @@
 			\item \quad $a>b$ならば\quad $a+c>b+c,\quad a-c>b-c$
 			\item \quad $a>b, c>0$ならば \quad $ac>bc,\quad \displaystyle \frac{a}{c} > \frac{b}{c}$
 			\item \quad $a>b, c<0$ならば \quad $ac<bc,\quad \displaystyle \frac{a}{c} < \frac{b}{c}$
-	\end{enumerate}
+		\end{enumerate}
 	\end{itembox}
 	特に(VI)の\\
 	\textbf{両辺に負の値を掛ける(割る)際には、不等号が逆になる}\\
 	ので注意する。
 }
-
+%
+\newpage
+{\Large
+	性質をまとめると、両辺に
+		\begin{enumerate}
+			\renewcommand{\theenumi}{\Roman{enumi}}	% 数字の形式を (i) に変更
+			\renewcommand{\labelenumi}{(\theenumi)}% ラベルの表示形式からドットを除去してカッコを付ける
+			\setcounter{enumi}{3}
+%
+			\item 同値を加減算しても良い。
+			\item 正の同値を乗除算しても良い。
+			\item 負の同値を乗除算しても良いが\textbf{不等号は逆}になる。
+	\end{enumerate}
+	
+	\quad \\[-1em]
+	\subsubsection{1次不等式の解法}
+	\begin{itemize}
+		\item 不等式の解 … 与えられた不等式の成り立つ$x$の範囲。\\[-.0em]
+				\hphantom{不等式の解 … }$x<3$\  などと表す。\\[-.5em]
+		\item 不等式を解く … 不等式の解を求めること。\\[-.5em]
+		\item 1次不等式 … $\text{右辺}=0$のときの左辺が1次の不等式。\\
+				\hphantom{1次不等式 … }$x-4>0$ \  のような式。
+	\end{itemize}
+%
+%
+	\quad \\[-1.0em]
+	\begin{itembox}[l]{例題1: 1次不等式の解}
+	\vspace{-1em}
+		\begin{align*}
+			\frac{x+3}{2} > 2x-3
+		\end{align*}
+		%
+%		\quad\\
+		\begin{flalign*}
+		&&	x+3 &> 4x-6		&& \leftarrow \text{両辺に}2\text{をかける}\\
+%		&&	x+3 -4x &> 4x -4x -6	&& 
+		&&	-3x+3 &> -6		&&	\leftarrow \text{両辺から}4x\text{を引く}\\
+		&&	-3x &> -9		&& \leftarrow \text{両辺から}3\text{を引く}\\
+		&&	x &< 3			&& \leftarrow \text{両辺を}-3\text{で割る}
+		\end{flalign*}
+		よって解は\quad $x <3$\quad である。
+	\end{itembox}
+}
