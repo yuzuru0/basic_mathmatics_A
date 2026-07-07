@@ -263,7 +263,7 @@
 	\end{center}
 	%
 		\quad \\
-		\begin{itembox}[l]{例題2: 連立不等式の解}
+		\begin{itembox}[l]{例題3: 2次不等式の解1}
 	\vspace{-0em}
 		\begin{align*}
 					(x+3)(x-5) >0
@@ -297,4 +297,72 @@
 		
 	\end{itembox}
 }
-
+\newpage
+{\Large
+	\begin{itembox}[l]{2次不等式の解}
+	$\alpha<\beta$のとき
+		\begin{align*}
+			(x-\alpha)(x-\beta) >0 \quad \text{の解は}\quad  &x < \alpha,\  x > \beta\\
+			(x-\alpha)(x-\beta) <0 \quad \text{の解は}\quad  &\alpha < x <\beta
+		\end{align*}
+	\end{itembox}
+	なぜなら、
+		\begin{center}
+			\hspace{2em}\includegraphics[width=.5\textwidth]{./img/2_2_3_2nd_inequalities_area_theory.eps}
+		\end{center}
+	だからである。\\[1em]
+	また不等式に$=$がついた場合も同等である。\\[2em]
+	%
+	\begin{itembox}[l]{例題4-1: 2次不等式\quad $	x^2-5x+6 >0$\quad の解}
+		\vspace{-0em}
+%		\quad \\[-3em]
+		\begin{align*}
+			x^2-5x+6&>0	\\
+			(x-2)(x-3)&>0
+		\end{align*}
+		\quad \\[-1em]
+		%
+		$\alpha=2,\ \beta=3,\ >0$なので
+		
+		\begin{align*}
+			x<2, x>3
+		\end{align*}
+	\end{itembox}
+	
+}
+\newpage
+{\Large
+	\begin{itembox}[l]{例題4-2: 2次不等式\quad $ -6x^2-x+2\geqq 0$\quad の解}
+		\vspace{-0em}
+%		\quad \\[-3em]
+		\begin{flalign*}
+		&&	-6x^2-x+2\geqq 0	&&	\\
+		&&	6x^2+x-2\leqq 0		&& \leftarrow -1 \text{倍}
+		\end{flalign*}
+		\quad \\[-1em]
+		%
+		上記をたすき掛けにより因数分解すると
+		
+		\begin{align*}
+			\begin{array}{ccclc}
+			  3 &        				& \ 2 		& \longrightarrow	& 4 \\[-0.8em]
+			    & \mbox{\Huge $\times$} &   		& 					&\\[-0.8em]
+			  2 &        				& -1 		& \longrightarrow 	&	-3 \\ \hline
+			  6 &       				& -2 		& 					&1
+			\end{array}
+		\end{align*}
+		
+		\begin{flalign*}
+			&&	(3x+2)(2x-1) &\leqq 0												&&\\[.5em]
+			&&	3\left( x+\frac{2}{3}\right) 2 \left( x-\frac{1}{2}\right) &\leqq 0	&&	\leftarrow x\text{の前を}1\text{に}\\[.5em]
+			&&	6\left( x+\frac{2}{3}\right) \left( x-\frac{1}{2}\right) &\leqq 0	&&	\\
+			&&	\left( x+\frac{2}{3}\right) \left( x-\frac{1}{2}\right) &\leqq 0	&&	\leftarrow \text{両辺}6\text{でわる}\\[.5em]\\
+		\end{flalign*}
+		
+		$\alpha=-\frac{2}{3},\ \beta=\frac{1}{2},\ \leqq 0$なので
+		
+		\begin{align*}
+			-\frac{2}{3} \leqq x \leqq \frac{1}{2}
+		\end{align*}
+	\end{itembox}
+}
