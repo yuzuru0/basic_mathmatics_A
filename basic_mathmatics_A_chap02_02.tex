@@ -366,3 +366,127 @@
 		\end{align*}
 	\end{itembox}
 }
+\newpage
+{\Large
+	\begin{itemize}
+		\item 高次不等式
+	\end{itemize}
+	
+	2次より上の不等式についても、
+	\begin{multicols}{2}
+		\begin{itemize}
+			\item 因数分解
+			\item 増減表
+		\end{itemize}
+	\end{multicols}
+	を用いることで解が得られる。\\
+	
+	\begin{itembox}[l]{例題5: \quad $ 2x^3-x^2-7x+6< 0$\quad の解}
+%		\vspace{-0em}
+		\quad \\[-.5em]
+		因数定理を用いて因数分解を行う。\\[-1.0em]
+		
+		$x=1$のとき、\quad $\text{左辺} = 2 - 1 -7 + 6 =0$\quad であるので、
+		
+		\begin{itemize}
+			\item $x-1$で割り切れる。\vspace{-.5em}
+			\item 商は$2x^2+x-6$である。
+		\end{itemize}
+		\vspace{-1em}\begin{align*}
+		(x-1)(2x^2+x-6)&< 0\\
+		(x-1)(x+2)(2x-3)&<0
+		\end{align*}
+		
+		カッコ内が0となる、$x=-2, 1, \frac{3}{2}$で正負が入れ替わる。
+				\begin{center}
+			\begin{tabular}{|c |c|c|c|c|c|c|c|} \hline
+				$x$			& $\cdots$	& $-2$	& $\cdots$	& $1$	& $\cdots$	& $\frac{3}{2}$	& $\cdots$\\ \hline \hline
+				$(x+2)$		& $-$		& $0$	& $+$		& $+$	& $+$		& $+$			& $+$		\\ \hline
+				$(x-1)$		& $-$		& $-$	& $-$		& $0$	& $+$		& $+$			& $+$		\\ \hline
+				$(2x-3)$	& $-$		& $-$	& $-$		& $-$	& $-$		& $0$			& $+$		\\ \hline \hline
+				左辺		& $-$		& $0$	& $+$		& $0$	& $-$		& $0$			& $+$		\\ \hline
+			\end{tabular}
+		\end{center}
+		\vspace{-1.5em}
+		\begin{center}
+			\hspace{6em}\includegraphics[width=.6\textwidth]{./img/2_2_3_3rd_inequalities_area.eps}
+		\end{center}
+		
+		よって、$x<-2,\quad 1<x<\frac{3}{2}$
+	\end{itembox}
+	
+}
+\newpage
+{\Large
+\subsubsection{不等式の証明}
+
+不等式の証明は、性質で説明した(I)から(VI)を使用する\\[-1.5em]
+
+	\begin{itembox}[l]{例題6: 1次不等式の証明1}
+%		\vspace{-0em}
+		\quad \\[-1.em]
+		$x\geqq 1,\ y\geqq 1$のとき、$xy+1 \geqq x+y$が成り立つことを証明せよ.また、等号の成り立つ条件を調べよ。
+		\\[-0.5em]
+		
+		与式を変形すると
+		\begin{flalign*}
+			&& xy+1 \ &\geqq \ x+y				&&	\\
+			&& (xy+1) - (x+y)\  & \geqq \  0	&& \leftarrow (I)	\\
+			&& xy -x -y +1 \  &\geqq \ 0		&&					\\
+			&& x(y -1) -(y -1) \  &\geqq \ 0	&&					\\
+			&& (x-1)(y -1) \  &\geqq \ 0		&&					
+		\end{flalign*}
+		\quad \\[-2.5em]である。
+		
+		与えられた条件$x\geqq 1,\ y\geqq 1$は(I)により
+		\begin{align*}
+			x -1 \geqq 0, \qquad y-1 \geqq 0
+		\end{align*}
+		\quad \\[-2.5em]である。
+		
+		つまり与式のカッコ内はどちらも常に正または0であり、\\
+		$xy+1 \geqq x+y$は成り立つことが証明される。\\[0em]
+		
+		等号が成り立つ条件は、$(x-1)(y -1) \  =\  0$のときであり、どちらかのカッコ内が0である。\\
+		そのため$x-1=0,\ y-1=0$となる。
+		
+		つまり、$x=1$または$y=1$のときに等号は成り立つ。
+	\end{itembox}
+}
+\newpage
+{\Large
+		\begin{itembox}[l]{例題7: 1次不等式の証明2}
+%		\vspace{-0em}
+		\quad \\[-0.em]
+		$a>b>0, \quad c>d>0$のとき、$ac>bd$を証明せよ。
+		\\[-0.5em]
+		\begin{flalign*}
+			&& &a-b >0 							&& \leftarrow (I)	\\
+			&& &c>0なので\quad c(a-b) = ac-bc>0	&& \leftarrow (V)	\\
+		\end{flalign*}
+		\\[-5em]
+		\begin{flalign*}
+			&& &c-d >0 							&& \leftarrow (I)	\\
+			&& &b>0なので\quad b(c-d) = bc-bd>0	&& \leftarrow (V)	\\
+		\end{flalign*}
+		$ac-bc>0$\ と\ $bc-bd>0$\ を足すことで、
+		\begin{align*}
+		ac -bd &>0	\\
+		ac >bd
+		\end{align*}
+	\end{itembox}
+	\\[2em]
+	不等式の証明には、下記実数の性質も良く用いる。\\[-1em]
+	\begin{itembox}[l]{実数の性質}
+		任意の実数$a$は、\quad $a^2 \geqq0$\quad が成り立つ
+	\end{itembox}
+	\\[1em]
+	\noindent【例】上記より$(a-b)^2 \geqq 0$である。
+	展開すると
+	\begin{align*}
+		a^2+b^2-2ab &\geqq 0\\
+		a^2 +b^2 &\geqq 2ab
+	\end{align*}
+	となる。\\[.5em]
+	等号は$(a-b)^2=0$なので、$a-b=0$つまり$a=b$のとき成り立つ
+}
