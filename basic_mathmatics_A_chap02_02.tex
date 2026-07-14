@@ -490,3 +490,143 @@
 	となる。\\[.5em]
 	等号は$(a-b)^2=0$なので、$a-b=0$つまり$a=b$のとき成り立つ
 }
+\newpage
+{\Large
+	\begin{itemize}
+		\item 2次不等式の証明
+	\end{itemize}
+	
+		\quad\\[-3.2em]
+	\begin{itembox}[l]{2次不等式 \quad $x^2+xy+y^2 \geqq 0$ \quad の証明}
+		\vspace{-1em}
+		\begin{align*}
+			x^2+xy \hphantom{+\left( \frac{1}{4}y^2 -\frac{1}{4}y^2 \right)} 										+y^2	&\geqq 0	\\%[0.5em]
+			x^2+xy + \left( \frac{1}{4}y^2 -\frac{1}{4}y^2 \right)  	+y^2 	&\geqq 0	\\[0.75em]
+			\left(x^2+xy + \frac{1}{4}y^2 \right) + \left( -\frac{1}{4}y^2 	+y^2\right) 	&\geqq 0	\\[0.75em]
+			\left(x^2+xy + \frac{1}{4}y^2 \right) + \left( \frac{3}{4}y^2 \right) 	&\geqq 0	\\[0.75em]
+			\left(x+\frac{1}{2}y \right)^2 + \left( \frac{3}{4}y^2 \right) 	&\geqq 0%	\\%[0.75em]
+		\end{align*}
+		\\[.5em]
+		実数$a$は$a^2 \geqq 0$なので %\\[.5em]
+		\quad $ \displaystyle \left(x+\frac{1}{2}y \right)^2 \geqq 0$,\quad  $ \displaystyle  \left( \frac{3}{4}y^2 \right)\geqq 0$\\[.5em]
+		よって$x^2+xy+y^2 \geqq 0$と証明される。
+		\quad \\[.5em]
+		
+		等号となるのは、
+		%
+		\vspace{-2.5em}
+		\begin{align*}
+				x^2+xy+y^2 &= 0	\\[.5em]
+				\left(x+\frac{1}{2}y \right)^2 + \left( \frac{3}{4}y^2 \right) 	&=0
+		\end{align*}
+		\\[1em]
+		つまり、$ \displaystyle x+\frac{1}{2}y =0 $かつ $ \displaystyle  \frac{3}{4}y^2 =0$
+		\quad \\[1em]
+		解は$x=y=0$なので、このときにだけ等号が成り立つ
+	\end{itembox}
+}
+%\newpage
+{\Large
+	\begin{itemize}
+		\renewcommand{\labelitemi}{$\triangleright$}
+		\item 相加平均と相乗平均の不等式
+	\end{itemize}
+	\quad \\[-2em]
+	\begin{itemize}
+		\item 平均 …複数データを均等な大きさにならした代表値
+		%
+		\begin{itemize}
+			\item 相加平均 … 複数データを加算し、個数で割った値
+			\item 相乗平均 … 複数データを乗算し、累乗根\footnote{平方根の拡張、後ほど学習する。2個の場合は平方根となる。}した値
+		\end{itemize}
+	\end{itemize}
+	\quad \\[1em]
+	\noindent【例】データが$a,b$の2個の場合
+		\begin{itemize}
+			\item 相加平均 … $\displaystyle \frac{a+b}{2}$
+			\item 相乗平均 … $\sqrt{ab}$
+		\end{itemize}
+		\quad \\
+		
+		\begin{itembox}[l]{例題A: 相加平均と相乗平均}
+%		\vspace{-0em}
+		ある二人の数学のテストの点数が、76点と52点であった。\\%[1em]
+		
+		\begin{itemize}
+			\item 相加平均…$\displaystyle \frac{76+52}{2} \ = \frac{128}{2} \ = 64$ \\
+			\item 相乗平均…$\displaystyle \sqrt{76\cdot 52} \ = \sqrt{3952} \ \fallingdotseq  62.865$\\
+		\end{itemize}
+
+		\end{itembox}
+}
+\newpage
+{\Large
+	\begin{itembox}[l]{相加平均と相乗平均の関係}
+%		\vspace{-0em}
+		$a,b$が正の数のとき
+		\begin{align*}
+			\frac{a+b}{2} \geqq \sqrt{ab}
+		\end{align*}
+		または
+		\begin{align*}
+			a+b \geqq 2\sqrt{ab}
+		\end{align*}
+		\quad \\[-1em]
+		等号は$a=b$のときにだけ成り立つ
+	\end{itembox}
+	【証明】
+	\vspace{-1em}
+	\begin{align*}
+		\frac{a+b}{2} 									&\quad \geqq\  \sqrt{ab}	\\[.5em]
+		\frac{a+b}{2} -\sqrt{ab}						&\quad \geqq\  0			\\[.5em]
+		\frac{a+b -2\sqrt{ab}}{2}						&\quad \geqq\  0			\\[.5em]
+		\frac{\sqrt{a}^2  -2\sqrt{ab} + \sqrt{b}^2}{2}	&\quad \geqq\  0			\\[.5em]
+		\frac{(\sqrt{a} - \sqrt{b})^2}{2}	&\quad \geqq\  0			\\
+	\end{align*}
+	実数の2乗は0以上であるため、$\displaystyle \frac{a+b}{2} \geqq \sqrt{ab}$\quad は成り立つ。\\[2em]
+	
+	$\displaystyle 	\frac{(\sqrt{a} - \sqrt{b})^2}{2} =  0$はカッコ内が0のとき、\\[.5em]
+	すなわち$\sqrt{a}-\sqrt{b}=0$、
+	$a=b$のときに成り立つ。
+}
+\newpage
+{\Large
+	\subsubsection{集合}
+	
+	\begin{itemize}
+		\item 集合 … ある条件を満たすものの集まり
+		\item 要素 … 集合を構成するものの1つ1つ
+	\end{itemize}
+	\quad\\
+	%
+	\noindent【例】
+	\begin{enumerate}
+	\renewcommand{\theenumi}{(\arabic{enumi})}
+		\item 5以下の自然数の集合: $ \{ 1,2,3,4,5\}$
+		\item 正の偶数の集合: $ \{ 2, 4, 6, 8 ,10, \cdots \}$
+	\end{enumerate}
+	\quad\\[-.5em]
+	上記はそれぞれ、
+	\begin{enumerate}
+	\renewcommand{\theenumi}{(\arabic{enumi})}
+		\item $\{x\ |\ xは5以下の自然数 \}$
+		\item $\{x\ |\ xは正の偶数 \}$
+	\end{enumerate}
+	とも記述できる。
+	%
+	\quad \\[2em]
+	\noindent【問A】以下の集合を考えよ
+	\begin{enumerate}
+		\item 20以下の素数
+		\item 100以下の自然数で、各位の和が9になる数
+	\end{enumerate}
+	\quad\\
+	%
+	\noindent【問B】以下は何の集合か? その条件を考えよ
+	\begin{enumerate}
+		\item $\{ 12, 15, 18, 21, 24\}$
+		\item $ \{1, 4, 9, 16, 25, 36\}$
+		\item $\{31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31\}$
+	\end{enumerate}
+	
+}
